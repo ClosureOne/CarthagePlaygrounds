@@ -26,7 +26,23 @@
 		792E4C871EA647F40099BC71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 792E4C851EA647F40099BC71 /* Main.storyboard */; };
 		792E4C891EA647F40099BC71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 792E4C881EA647F40099BC71 /* Assets.xcassets */; };
 		792E4C8C1EA647F40099BC71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 792E4C8A1EA647F40099BC71 /* LaunchScreen.storyboard */; };
+		792E4C991EA64ECA0099BC71 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792E4C981EA64ECA0099BC71 /* Alamofire.framework */; };
+		792E4C9A1EA64ECA0099BC71 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 792E4C981EA64ECA0099BC71 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		792E4C9B1EA64ECA0099BC71 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				792E4C9A1EA64ECA0099BC71 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		792E4C7E1EA647F40099BC71 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +52,7 @@
 		792E4C881EA647F40099BC71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		792E4C8B1EA647F40099BC71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		792E4C8D1EA647F40099BC71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		792E4C981EA64ECA0099BC71 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				792E4C991EA64ECA0099BC71 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				792E4C801EA647F40099BC71 /* Example */,
+				792E4C9C1EA64ECE0099BC71 /* Frameworks */,
 				792E4C7F1EA647F40099BC71 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +97,14 @@
 			path = Example;
 			sourceTree = "<group>";
 		};
+		792E4C9C1EA64ECE0099BC71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				792E4C981EA64ECA0099BC71 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -88,6 +115,7 @@
 				792E4C7A1EA647F40099BC71 /* Sources */,
 				792E4C7B1EA647F40099BC71 /* Frameworks */,
 				792E4C7C1EA647F40099BC71 /* Resources */,
+				792E4C9B1EA64ECA0099BC71 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,7 +193,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/bin/env xcrun --toolchain com.apple.dt.toolchain.Default --sdk macosx swift -target x86_64-apple-macosx10.12 -F \"${PROJECT_DIR}/../Carthage/Build/Mac\" \"${SRCROOT}/Scripts/CarthageTool.swift\"\n";
+			shellScript = "/usr/bin/env xcrun --toolchain com.apple.dt.toolchain.Default --sdk macosx swift -target x86_64-apple-macosx10.12 -F \"${PROJECT_DIR}/Carthage/Build/Mac\" \"${SRCROOT}/Scripts/CarthageTool.swift\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -357,6 +385,7 @@
 				792E4C921EA647F40099BC71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		792E4C941EA64D830099BC71 /* Build configuration list for PBXAggregateTarget "CarthageTool" */ = {
 			isa = XCConfigurationList;
@@ -365,6 +394,7 @@
 				792E4C961EA64D830099BC71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
