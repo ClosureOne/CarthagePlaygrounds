@@ -1,0 +1,11 @@
+# Run the following command when making changes:
+# TOOLCHAINS=com.apple.dt.toolchain.Default carthage update
+# or
+# TOOLCHAINS=com.apple.dt.toolchain.Default carthage update Alamofire --platform iOS
+
+github "Alamofire/Alamofire" == 4.2.0
+
+# macOS only
+# TOOLCHAINS=com.apple.dt.toolchain.Default carthage update SwiftScriptCore --platform macOS
+
+github "richardnees/SwiftScriptCore" == 0.1
