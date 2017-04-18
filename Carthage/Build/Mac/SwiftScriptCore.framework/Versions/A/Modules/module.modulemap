@@ -1,0 +1,10 @@
+framework module SwiftScriptCore {
+  umbrella header "SwiftScriptCore.h"
+
+  export *
+  module * { export * }
+}
+
+module SwiftScriptCore.Swift {
+    header "SwiftScriptCore-Swift.h"
+}

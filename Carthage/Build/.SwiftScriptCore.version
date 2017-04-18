@@ -1,0 +1,10 @@
+{
+  "xcodeVersion" : "Xcode 8.3.1\nBuild version 8E1000a",
+  "commitish" : "0.1",
+  "Mac" : [
+    {
+      "hash" : "7675499355aeb3f7315f773381b86f347cd61b49cd45e4df5065adc8a162c64a",
+      "name" : "SwiftScriptCore"
+    }
+  ]
+}
