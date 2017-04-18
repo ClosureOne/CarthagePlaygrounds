@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		792E4C931EA64D830099BC71 /* CarthageTool */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 792E4C941EA64D830099BC71 /* Build configuration list for PBXAggregateTarget "CarthageTool" */;
+			buildPhases = (
+				792E4C971EA64D910099BC71 /* Run CarthageTool */,
+			);
+			dependencies = (
+			);
+			name = CarthageTool;
+			productName = CarthageTool;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		792E4C821EA647F40099BC71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792E4C811EA647F40099BC71 /* AppDelegate.swift */; };
 		792E4C841EA647F40099BC71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792E4C831EA647F40099BC71 /* ViewController.swift */; };
@@ -99,6 +113,11 @@
 						DevelopmentTeam = S6PH7FUNVK;
 						ProvisioningStyle = Automatic;
 					};
+					792E4C931EA64D830099BC71 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = S6PH7FUNVK;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 792E4C791EA647F40099BC71 /* Build configuration list for PBXProject "Example" */;
@@ -115,6 +134,7 @@
 			projectRoot = "";
 			targets = (
 				792E4C7D1EA647F40099BC71 /* Example */,
+				792E4C931EA64D830099BC71 /* CarthageTool */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +151,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		792E4C971EA64D910099BC71 /* Run CarthageTool */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run CarthageTool";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/bin/env xcrun --toolchain com.apple.dt.toolchain.Default --sdk macosx swift -target x86_64-apple-macosx10.12 -F \"${PROJECT_DIR}/../Carthage/Build/Mac\" \"${SRCROOT}/Scripts/CarthageTool.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		792E4C7A1EA647F40099BC71 /* Sources */ = {
@@ -285,6 +322,22 @@
 			};
 			name = Release;
 		};
+		792E4C951EA64D830099BC71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = S6PH7FUNVK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		792E4C961EA64D830099BC71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = S6PH7FUNVK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -302,6 +355,14 @@
 			buildConfigurations = (
 				792E4C911EA647F40099BC71 /* Debug */,
 				792E4C921EA647F40099BC71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		792E4C941EA64D830099BC71 /* Build configuration list for PBXAggregateTarget "CarthageTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				792E4C951EA64D830099BC71 /* Debug */,
+				792E4C961EA64D830099BC71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
