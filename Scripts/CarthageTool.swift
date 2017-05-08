@@ -73,7 +73,7 @@ class CarthageTool {
                 case .iphonesimulator:
                     remove(architecture: .armv7, from: executablePath)
                     remove(architecture: .arm64, from: executablePath)
-                case .unsupported:
+                default:
                     XcodeLogger.output(message: "Unsupported platform", type: .error, line: #line)
                     return
                 }
