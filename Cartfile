@@ -8,4 +8,4 @@ github "Alamofire/Alamofire" == 4.2.0
 # macOS only
 # TOOLCHAINS=com.apple.dt.toolchain.Default carthage update SwiftScriptCore --platform macOS
 
-github "richardnees/SwiftScriptCore" == 0.1.3
+github "richardnees/SwiftScriptCore" == 0.1.4
